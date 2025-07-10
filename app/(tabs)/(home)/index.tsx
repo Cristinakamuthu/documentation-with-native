@@ -1,8 +1,10 @@
+import { Link } from "expo-router"
 import { StyleSheet, Text, View } from "react-native"
 export default function Homescreen(){
   return(
     <View style = {styles.container}>
       <Text style={styles.text}>Home</Text>
+      <Link href="/details" style={styles.link}>View details</Link>
     </View>
   )
 }
@@ -18,6 +20,13 @@ const styles = StyleSheet.create({
   text:{
     color:'white',
     fontSize:56,
-  }
+  },
+  link:{
+    color:"white",
+    fontSize:24,
+    textDecorationLine:"underline"
+
+  },
+
 
 })
